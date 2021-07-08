@@ -59,6 +59,10 @@ html {
   color: red;
 }
 
+.color2 {
+  color: #e55150;
+}
+
 .boxCont {
   -webkit-box-shadow: 1px 1px 10px #cecece;
           box-shadow: 1px 1px 10px #cecece;
@@ -67,6 +71,10 @@ html {
 
 .price {
   color: #e54750;
+}
+
+.pointer {
+  cursor: pointer;
 }
 
 .logo_container img {
@@ -193,5 +201,39 @@ html {
 
 .listCardCont p {
   font-size: 0.8rem;
+}
+
+.footer_container {
+  background-color: #282828;
+  padding: 4rem 0rem 6rem 0rem;
+}
+
+.footer_container a {
+  text-decoration: none;
+  color: #fff;
+  margin-bottom: 0.6rem;
+  -webkit-transition: 0.8s all;
+  transition: 0.8s all;
+}
+
+.footer_container a:hover {
+  color: #e55150;
+}
+
+.footer_container .contactUs a {
+  font-size: 1.2rem;
+}
+
+.footer_container .followUsIcon div:nth-child(1) i {
+  color: #e55150;
+  font-size: 2.25rem;
+}
+
+.footer_container .followUsIcon div:nth-child(2) i {
+  color: #282828;
+  font-size: 1.45rem;
+  background-color: #e55150;
+  border-radius: 50%;
+  padding: 0.25rem 0.45rem 0.12rem 0.42rem;
 }
 /*# sourceMappingURL=style.css.map */

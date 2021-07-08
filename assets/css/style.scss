@@ -7,6 +7,10 @@
 	font-family: "Poppins", sans-serif;
 }
 
+// THEME COLORS START
+$themeColor: #e55150;
+// THEME COLORS END
+
 html {
 	width: 100%;
 	font-size: 100%;
@@ -60,6 +64,10 @@ html {
 	color: red;
 }
 
+.color2 {
+	color: $themeColor;
+}
+
 .boxCont {
 	box-shadow: 1px 1px 10px #cecece;
 	border-radius: 12px;
@@ -67,6 +75,10 @@ html {
 
 .price {
 	color: #e54750;
+}
+
+.pointer {
+	cursor: pointer;
 }
 // GLOBAL STYLING END
 
@@ -229,5 +241,49 @@ html {
 	}
 }
 // LIST END
-
 // BODY END
+
+// FOOTER START
+.footer_container {
+	background-color: #282828;
+	padding: 4rem 0rem 6rem 0rem;
+
+	a {
+		text-decoration: none;
+		color: #fff;
+		margin-bottom: 0.6rem;
+		transition: 0.8s all;
+
+		&:hover {
+			color: $themeColor;
+		}
+	}
+
+	.contactUs{
+		a {
+			font-size: 1.2rem;
+		}
+	}
+
+	.followUsIcon {
+		div {
+			&:nth-child(1) {
+				i {
+					color: $themeColor;
+					font-size: 2.25rem;
+				}
+			}
+
+			&:nth-child(2) {
+				i {
+					color: #282828;
+					font-size: 1.45rem;
+					background-color: $themeColor;
+					border-radius: 50%;
+					padding: 0.25rem 0.45rem 0.12rem 0.42rem;
+				}
+			}
+		}
+	}
+}
+// FOOTER END
