@@ -82,11 +82,50 @@ html {
   height: 54px;
 }
 
+.hamber_container {
+  left: 5%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.hamber_container i {
+  font-size: 1.5rem;
+}
+
+.sideBar {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  right: 0%;
+  bottom: 0%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-color: #fff;
+  z-index: 99999;
+  display: none;
+  opacity: 0;
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+
+.sideBar ul li a {
+  font-size: 1.3rem;
+}
+
+#closeSidebar {
+  padding-top: 24px;
+  padding-left: 20px;
+}
+
 .hero_section {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.42)), to(rgba(7, 7, 7, 0.53))), url("https://images.unsplash.com/photo-1513104890138-7c749659a591?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80");
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.42), rgba(7, 7, 7, 0.53)), url("https://images.unsplash.com/photo-1513104890138-7c749659a591?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80");
   width: 100%;
   height: 350px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .breadcrumb_container span {
@@ -244,9 +283,31 @@ html {
 }
 
 @media screen and (max-width: 768px) {
+  .hero_section {
+    height: 270px;
+  }
+  .thumbDetail_container .thumbnail_container img {
+    width: 78px;
+    height: 78px;
+  }
   .detailProduct_container {
     width: 1068px;
     overflow-x: auto;
+  }
+  .detailProduct_container .inner_detail_container .detail_part:nth-child(1) {
+    width: 70px;
+  }
+  .detailProduct_container .inner_detail_container .detail_part:nth-child(2) {
+    width: 82px;
+  }
+  .detailProduct_container .inner_detail_container .detail_part:nth-child(3) {
+    width: 145px;
+  }
+  .detailProduct_container .inner_detail_container .detail_part:nth-child(4) {
+    width: 96px;
+  }
+  .detailProduct_container .inner_detail_container .detail_part:nth-child(5) {
+    width: 96px;
   }
 }
 
