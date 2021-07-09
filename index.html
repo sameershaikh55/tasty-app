@@ -100,9 +100,11 @@
 					bottom-0
 					w-100
 					d-flex
-					justify-content-center
+					justify-content-start justify-content-md-end justify-content-lg-center
 					text-white
 					py-2
+					pe-4 pe-lg-0
+					ps-4 ps-md-0
 				"
 			>
 				<div class="">
@@ -150,7 +152,7 @@
 			<div class="page_container">
 				<div class="container-fluid">
 					<div class="row mt-4">
-						<div class="col-2">
+						<div class="d-none d-md-block col-3 col-xl-2">
 							<div class="categories_container boxCont">
 								<div class="py-3 h6 mb-0 px-3">
 									<i class="fas fa-utensils text-dark"></i> Categories
@@ -173,7 +175,7 @@
 							</div>
 						</div>
 
-						<div class="col-6">
+						<div class="col-12 col-md-9 col-xl-6">
 							<div class="seacrchCont d-flex align-items-center w-100">
 								<h6 class="mb-0 me-3">Search for item:</h6>
 								<div class="searchField position-relative w-100">
@@ -320,7 +322,7 @@
 							</div>
 						</div>
 
-						<div class="col-4">
+						<div class="col-12 col-sm-8 col-md-6 col-lg-4 mt-5 mt-xl-0 ms-auto">
 							<div class="checkout_container boxCont py-3">
 								<div class="d-flex align-items-center pb-3 px-4">
 									<div class="checkout_thumbnail">
@@ -404,78 +406,84 @@
 		<div class="footer_container mt-5">
 			<div class="page_container">
 				<div class="container-fluid">
-					<div class="row text-white">
-						<div class="col-3 d-flex flex-column">
-							<h4 class="text-uppercase">quick links</h4>
-							<a href="" class="small mb-2">About us</a>
-							<a href="" class="small mb-2">Add your restaurant</a>
-							<a href="" class="small mb-2">Deliver with us</a>
-						</div>
-						<div class="col-3 d-flex flex-column">
-							<h4 class="text-uppercase">cuisines</h4>
-							<a
-								href=""
-								class="small mb-2"
-								class="small mb-2"
-								class="small mb-2"
-								>Burger</a
-							>
-							<a
-								href=""
-								class="small mb-2"
-								class="small mb-2"
-								class="small mb-2"
-								>Chicken</a
-							>
-							<a
-								href=""
-								class="small mb-2"
-								class="small mb-2"
-								class="small mb-2"
-								>Burger</a
-							>
-							<a
-								href=""
-								class="small mb-2"
-								class="small mb-2"
-								class="small mb-2"
-								>Chicken</a
-							>
-							<a
-								href=""
-								class="small mb-2"
-								class="small mb-2"
-								class="small mb-2"
-								>Burger</a
-							>
-							<a
-								href=""
-								class="small mb-2"
-								class="small mb-2"
-								class="small mb-2"
-								>Chicken</a
-							>
-						</div>
-						<div class="col-3 contactUs d-flex flex-column">
-							<h4 class="text-uppercase">Contacs</h4>
-							<a href=""
-								><i class="bi bi-geo-alt-fill me-2 color2"></i>
-								<span class="small">2386 Despard Street Atlanta, GA 30309</span>
-							</a>
-							<a href=""
-								><i class="bi bi-telephone-fill me-2 color2"></i>
-								<span class="small"> 21616516516 </span>
-							</a>
-							<a href=""
-								><i class="bi bi-envelope-fill me-2 color2"></i
-								><span class="small">payex93492@ind.com </span>
-							</a>
-						</div>
-						<div class="col-3 d-flex flex-column">
-							<h4 class="text-uppercase">follow us</h4>
-							<div class="followUsIcon d-flex align-items-center">
-								<div><i class="bi bi-facebook"></i></div>
-								<div><i class="bi bi-twitter ms-2"></i></div>
+					<div class="row">
+						<div class="col-12 col-sm-10 col-md-12 mx-auto">
+							<div class="row text-white">
+								<div class="col-6 col-md-3 d-flex flex-column">
+									<h4 class="text-uppercase">quick links</h4>
+									<a href="" class="small mb-2">About us</a>
+									<a href="" class="small mb-2">Add your restaurant</a>
+									<a href="" class="small mb-2">Deliver with us</a>
+								</div>
+								<div class="col-6 col-md-3 d-flex flex-column">
+									<h4 class="text-uppercase">cuisines</h4>
+									<a
+										href=""
+										class="small mb-2"
+										class="small mb-2"
+										class="small mb-2"
+										>Burger</a
+									>
+									<a
+										href=""
+										class="small mb-2"
+										class="small mb-2"
+										class="small mb-2"
+										>Chicken</a
+									>
+									<a
+										href=""
+										class="small mb-2"
+										class="small mb-2"
+										class="small mb-2"
+										>Burger</a
+									>
+									<a
+										href=""
+										class="small mb-2"
+										class="small mb-2"
+										class="small mb-2"
+										>Chicken</a
+									>
+									<a
+										href=""
+										class="small mb-2"
+										class="small mb-2"
+										class="small mb-2"
+										>Burger</a
+									>
+									<a
+										href=""
+										class="small mb-2"
+										class="small mb-2"
+										class="small mb-2"
+										>Chicken</a
+									>
+								</div>
+								<div class="col-6 col-md-3 contactUs d-flex flex-column mt-5 mt-md-0">
+									<h4 class="text-uppercase">Contacs</h4>
+									<a href=""
+										><i class="bi bi-geo-alt-fill me-2 color2"></i>
+										<span class="small"
+											>2386 Despard Street Atlanta, GA 30309</span
+										>
+									</a>
+									<a href=""
+										><i class="bi bi-telephone-fill me-2 color2"></i>
+										<span class="small"> 21616516516 </span>
+									</a>
+									<a href=""
+										><i class="bi bi-envelope-fill me-2 color2"></i
+										><span class="small">payex93492@ind.com </span>
+									</a>
+								</div>
+								<div class="col-6 col-md-3 d-flex flex-column mt-5 mt-md-0">
+									<h4 class="text-uppercase">follow us</h4>
+									<div class="followUsIcon d-flex align-items-center">
+										<div><i class="bi bi-facebook"></i></div>
+										<div><i class="bi bi-twitter ms-2"></i></div>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -492,6 +500,32 @@
 				type: "loop",
 				perPage: 3,
 				perMove: 1,
+				pagination: false,
+				breakpoints: {
+					1200: {
+						perPage: 4,
+					},
+				},
+				breakpoints: {
+					920: {
+						perPage: 3,
+					},
+				},
+				breakpoints: {
+					668: {
+						perPage: 2,
+					},
+				},
+				breakpoints: {
+					575: {
+						perPage: 3,
+					},
+				},
+				breakpoints: {
+					500: {
+						perPage: 2,
+					},
+				},
 			}).mount();
 
 			$.each([1, 1, 1, 1], function (key, value) {
