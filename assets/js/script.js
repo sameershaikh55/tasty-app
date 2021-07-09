@@ -1,38 +1,39 @@
-// PAGE ONE START
-new Splide("#splide", {
-  type: "loop",
-  perPage: 3,
-  perMove: 1,
-  pagination: false,
-  breakpoints: {
-    1200: {
-      perPage: 4,
+$(document).ready(function () {
+  // PAGE ONE START
+  new Splide("#splide", {
+    type: "loop",
+    perPage: 3,
+    perMove: 1,
+    pagination: false,
+    breakpoints: {
+      1200: {
+        perPage: 4,
+      },
     },
-  },
-  breakpoints: {
-    920: {
-      perPage: 3,
+    breakpoints: {
+      920: {
+        perPage: 3,
+      },
     },
-  },
-  breakpoints: {
-    668: {
-      perPage: 2,
+    breakpoints: {
+      668: {
+        perPage: 2,
+      },
     },
-  },
-  breakpoints: {
-    575: {
-      perPage: 3,
+    breakpoints: {
+      575: {
+        perPage: 3,
+      },
     },
-  },
-  breakpoints: {
-    500: {
-      perPage: 2,
+    breakpoints: {
+      500: {
+        perPage: 2,
+      },
     },
-  },
-}).mount();
+  }).mount();
 
-$.each([1, 1, 1, 1], function (key, value) {
-  $("#listData, #listData2, #listData3, #listData4, #listData5").append(`
+  $.each([1, 1, 1, 1], function (key, value) {
+    $("#listData, #listData2, #listData3, #listData4, #listData5").append(`
                                                                 <div
                                     class="
                                         col-12
@@ -63,6 +64,7 @@ $.each([1, 1, 1, 1], function (key, value) {
                                     </div>
                                 </div>
 `);
+  });
 });
 
 // FOR LISTING SHOW AND HIDE START
@@ -109,29 +111,3 @@ const closeSidebar = () => {
   sidebar.style.transition = "1s all";
 };
 // HAMBERGER END GLOBAL
-
-// SECOND PAGE (ORDER PAGE) START
-$.each([1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], function (key, value) {
-  $("#tbody").append(`
-    <tr>
-                            <th scope="row">6465D44</th>
-                            <td>
-                                <h6 class="fw-bold mb-1">Native Burger</h6>
-                                <p class="mb-0">Order Type Delivery</p>
-                                <p class="mb-0"><i class="bi bi-map-fill me-1"></i> Lorem ipsum dolor sit amet
-                                    consectetur adipisicing
-                                    elit.</p>
-                                <p class="mb-0"><i class="bi bi-clock-fill me-1"></i> 15:56:26 12-6-2020</p>
-                            </td>
-                            <td>Delivered</td>
-                            <td>€55.00</td>
-                            <td>
-                                <button
-                                    class="themeBtn px-3 py-1 w-100 text-white rounded-3 border-0 ${
-                                      key === 0 && "d-none"
-                                    }">Support</button>
-                            </td>
-                        </tr>
-`);
-});
-// SECOND PAGE (ORDER PAGE) END

@@ -16,8 +16,7 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <!-- EXTERNAL LINS END -->
-
-    <title>Document</title>
+    <title>Orders</title>
 </head>
 
 <body>
@@ -222,7 +221,49 @@
     <!-- FOOTER SECTION END -->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="assets/js/script.js"></script>
+    <script>
+        // SECOND PAGE (ORDER PAGE) START
+        $.each([1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], function (key, value) {
+            $("#tbody").append(`
+    <tr>
+                            <th scope="row">6465D44</th>
+                            <td>
+                                <h6 class="fw-bold mb-1">Native Burger</h6>
+                                <p class="mb-0">Order Type Delivery</p>
+                                <p class="mb-0"><i class="bi bi-map-fill me-1"></i> Lorem ipsum dolor sit amet
+                                    consectetur adipisicing
+                                    elit.</p>
+                                <p class="mb-0"><i class="bi bi-clock-fill me-1"></i> 15:56:26 12-6-2020</p>
+                            </td>
+                            <td>Delivered</td>
+                            <td>€55.00</td>
+                            <td>
+                                <button
+                                    class="themeBtn px-3 py-1 w-100 text-white rounded-3 border-0 ${key === 0 && "d-none"
+                }">Support</button>
+                            </td>
+                        </tr>
+`);
+        });
+        // SECOND PAGE (ORDER PAGE) END
+
+        // HAMBERGER START GLOBAL
+        const sidebar = document.getElementById("sideBarId");
+        document.getElementById("hambergerBtn").addEventListener("click", () => {
+            sidebar.style.display = "block";
+            sidebar.style.opacity = "1";
+            sidebar.style.top = "0%";
+            sidebar.style.left = "0%";
+            sidebar.style.transform = "none";
+        });
+
+        const closeSidebar = () => {
+            sidebar.style.display = "none";
+            sidebar.style.opacity = "0";
+            sidebar.style.transition = "1s all";
+        };
+// HAMBERGER END GLOBAL
+    </script>
 </body>
 
 </html>
