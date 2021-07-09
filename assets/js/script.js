@@ -58,8 +58,8 @@ $(document).ready(function () {
                                             elit. Dolore Lorem ipsum dolor sit amet.
                                         </p>
                                         <div class="d-flex align-items-baseline mt-1">
-                                            <h6 class="price h4 mb-0 fw-bold">€ 10.00</h6>
-                                            <h6 class="fw-bold mb-0 ms-2">Starting from</h6>
+                                        <h6 class="fw-bold mb-0">Starting from</h6>
+                                            <h6 class="price h4 mb-0 fw-bold ms-2">€ 10.00</h6>
                                         </div>
                                     </div>
                                 </div>

@@ -96,6 +96,27 @@ html {
   outline: none;
 }
 
+.themeBtn2 {
+  border: 2px solid #e54750;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+  color: #000;
+  padding: 0.14rem 0rem;
+}
+
+.themeBtn2:hover {
+  background-image: -webkit-gradient(linear, left top, right top, from(#e54750), to(#e54750));
+  background-image: linear-gradient(to right, #e54750, #e54750);
+  -webkit-box-shadow: 1px 1px 5px #cc262e;
+          box-shadow: 1px 1px 5px #cc262e;
+  color: #fff;
+}
+
+.themeBtn2:focus {
+  border: none;
+  outline: none;
+}
+
 .header_container {
   z-index: 999;
 }
