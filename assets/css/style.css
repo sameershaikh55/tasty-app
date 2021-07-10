@@ -209,6 +209,20 @@ html {
   padding-left: 0.8rem;
 }
 
+.categories_container.forSidebar {
+  position: static;
+  top: 0%;
+}
+
+.categories_container.forSidebar .cat_list li {
+  font-size: 1rem;
+}
+
+.categories_container.forSidebar .cat_list li:nth-child(1) {
+  border-left: 3px solid red;
+  padding-left: 0.8rem;
+}
+
 .seacrchCont h6 {
   width: 172px;
 }

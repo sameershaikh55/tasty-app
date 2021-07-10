@@ -231,6 +231,24 @@ html {
   }
 }
 
+// CATEGORIES FOR SIDEBAR START
+.categories_container.forSidebar {
+  position: static;
+  top: 0%;
+
+  .cat_list {
+    li {
+      font-size: 1rem;
+
+      &:nth-child(1) {
+        border-left: 3px solid red;
+        padding-left: 0.8rem;
+      }
+    }
+  }
+}
+// CATEGORIES FOR SIDEBAR END
+
 .seacrchCont {
   h6 {
     width: 172px;
